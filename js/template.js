@@ -108,31 +108,47 @@
 				$(".modal").prependTo( "body" );
 			});
 		}
-
-
-// Count Down Timer
+// var now = new Date().getTime()/ 1000,
+// 	var upcoming 
+// 	var last
+// var fullMoons = [
+// 	{epoch: 1497013800, sDate: 'June 9 13:10 UTC'},
+// 	{epoch: 1499573220, sDate: 'July 9 04:07 UTC'},
+// 	{epoch: 1502129400, sDate: 'August 7 18:10 UTC'},
+// 	{epoch: 1504681320, sDate: 'September 6 07:02 UTC'},
+// 	{epoch: 1507228800, sDate: 'October 5 18:40 UTC'},
+// 	{epoch: 1509772980, sDate: 'November 4 05:23 UTC'},
+// 	{epoch: 1512316020, sDate: 'December 3 15:47 UTC'},
+// ]
+// fulllMoons.forEach(function(moon){
+// if( now> moon.epoch)
+	
+// 	moon.epoch
+	
+// })
 
 $('.countdown').final_countdown({
-    start : new Date().getTime()/ 1000, //Here use Milisecond. To convert your time you can go to this(https://currentmillis.com/) website. 
+    start : 1497013800, //Here use Milisecond. To convert your time you can go to this(https://currentmillis.com/) website. 
     end   : 1499573220,
     now : new Date().getTime()/ 1000,
 seconds: {
-borderColor: '#5677fc',
+borderColor: '#ebebeb',
 borderWidth: '3'
 },
 minutes: {
-    borderColor: '#7e57c2',
-    borderWidth: '3'
+    borderColor: '#ebebeb',
+    borderWidth: '5'
 },
 hours: {
-    borderColor: '#4db6ac',
-    borderWidth: '3'
+    borderColor: '#ebebeb',
+    borderWidth: '8'
 },
 days: {
-    borderColor: '#d81b60',
-    borderWidth: '3'
+    borderColor: '#ebebeb',
+    borderWidth: '13'
 }}, function() {
 });
 
 	}); // End document ready
 })(this.jQuery);
+
