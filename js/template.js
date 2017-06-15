@@ -139,7 +139,7 @@ for (var i = 0;i<fullMoons.length -1;i++ ){
 
 	}
 }
-$( "#distDate" ).html(upcoming.sDate)
+$( "#distDate" ).html('Fullmoon, ' + upcoming.sDate)
 
 $('.countdown').final_countdown({
     start : last.epoch, //Here use Milisecond. To convert your time you can go to this(https://currentmillis.com/) website. 
