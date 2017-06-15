@@ -725,7 +725,7 @@ textarea {
 
 .clock{
     position: relative;
-    max-width: 480px;
+    max-width: 350px;
     margin: 0 auto;
 }
 .clock-item {
@@ -755,14 +755,13 @@ textarea {
 }
 
 .text {
-    color: #fff;    
-    font-size: 36px;
+    color: #c3c3c3;    
+    font-size: 25px;
     font-weight: 300;  
-    margin-top: -50px;
+    margin-top: -36px;
     position: absolute;
     top: 50%;
     text-align: center;
-    text-shadow: 1px 1px 1px rgba(0, 0, 0, 1);
     width: 100%;
 }
 
@@ -774,6 +773,7 @@ textarea {
 .text .type-time {
     font-size: 16px;
 }
+
 .app img{
 	margin-top: 20px;
 	margin-bottom: 10px;

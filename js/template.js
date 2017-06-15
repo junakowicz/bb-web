@@ -108,46 +108,60 @@
 				$(".modal").prependTo( "body" );
 			});
 		}
-// var now = new Date().getTime()/ 1000,
-// 	var upcoming 
-// 	var last
-// var fullMoons = [
-// 	{epoch: 1497013800, sDate: 'June 9 13:10 UTC'},
-// 	{epoch: 1499573220, sDate: 'July 9 04:07 UTC'},
-// 	{epoch: 1502129400, sDate: 'August 7 18:10 UTC'},
-// 	{epoch: 1504681320, sDate: 'September 6 07:02 UTC'},
-// 	{epoch: 1507228800, sDate: 'October 5 18:40 UTC'},
-// 	{epoch: 1509772980, sDate: 'November 4 05:23 UTC'},
-// 	{epoch: 1512316020, sDate: 'December 3 15:47 UTC'},
-// ]
-// fulllMoons.forEach(function(moon){
-// if( now> moon.epoch)
-	
-// 	moon.epoch
-	
-// })
+
+
+// COUNTDOWN
+var now = new Date().getTime()/1000
+
+var upcoming = null; 
+var last= null;
+
+var fullMoons = [
+	{epoch: 1497013800, sDate: 'June 9 13:10 UTC'},
+	{epoch: 1499573220, sDate: 'July 9 04:07 UTC'},
+	{epoch: 1502129400, sDate: 'August 7 18:10 UTC'},
+	{epoch: 1504681320, sDate: 'September 6 07:02 UTC'},
+	{epoch: 1507228800, sDate: 'October 5 18:40 UTC'},
+	{epoch: 1509772980, sDate: 'November 4 05:23 UTC'},
+	{epoch: 1512316020, sDate: 'December 3 15:47 UTC'},
+	{epoch: 9999999999, sDate: 'LAST we already conquered the world'},
+]
+
+for (var i = 0;i<fullMoons.length -1;i++ ){
+	if(now > fullMoons[i].epoch && now< fullMoons[i+1].epoch){
+		last = fullMoons[i]
+		upcoming = fullMoons[i+1]
+		break;
+
+	} else {
+		last = fullMoons[fullMoons.length-1]
+		upcoming = fullMoons[fullMoons.length-1]
+
+	}
+}
+$( "#distDate" ).html(upcoming.sDate)
 
 $('.countdown').final_countdown({
-    start : 1497013800, //Here use Milisecond. To convert your time you can go to this(https://currentmillis.com/) website. 
-    end   : 1499573220,
-    now : new Date().getTime()/ 1000,
-seconds: {
-borderColor: '#ebebeb',
-borderWidth: '3'
-},
-minutes: {
-    borderColor: '#ebebeb',
-    borderWidth: '5'
-},
-hours: {
-    borderColor: '#ebebeb',
-    borderWidth: '8'
-},
-days: {
-    borderColor: '#ebebeb',
-    borderWidth: '13'
-}}, function() {
-});
+    start : last.epoch, //Here use Milisecond. To convert your time you can go to this(https://currentmillis.com/) website. 
+    end   : upcoming.epoch,
+    now : now,
+	seconds: {
+	borderColor: 'rgb(139, 142, 150)',
+	borderWidth: '3'
+	},
+	minutes: {
+		borderColor: 'rgb(139, 142, 150)',
+		borderWidth: '5'
+	},
+	hours: {
+		borderColor: 'rgb(139, 142, 150)',
+		borderWidth: '8'
+	},
+	days: {
+		borderColor: 'rgb(139, 142, 150)',
+		borderWidth: '13'
+	}}, function() {
+	});
 
 	}); // End document ready
 })(this.jQuery);
