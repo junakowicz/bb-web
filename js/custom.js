@@ -1,3 +1,14 @@
+// blue
+// var lineCol = '#366ba0';
+// var fillCol = '#366ba0';
+
+// var lineCol = '#eb5633';
+// var fillCol = '#192735';
+//red
+var lineCol = '#9a3219';
+// green
+// var lineCol = '#4cae4c';
+var fillCol = '#0e2031';
 
 particlesJS("particles-js", {
   "particles": {
@@ -9,13 +20,13 @@ particlesJS("particles-js", {
       }
     },
     "color": {
-      "value": "#2c3e50"
+      "value": fillCol
     },
     "shape": {
       "type": "circle",
       "stroke": {
-        "width": 5,
-        "color": "#4f5b67"
+        "width": 2,
+        "color": lineCol
       },
       "polygon": {
         "nb_sides": 0
@@ -49,7 +60,7 @@ particlesJS("particles-js", {
     "line_linked": {
       "enable": true,
       "distance": 448.9553770423464,
-      "color": "#4f5b67",
+      "color": lineCol,
       "opacity": 1,
       "width": 1.763753266952075
     },
