@@ -1,14 +1,14 @@
 // blue
-// var lineCol = '#366ba0';
+var lineCol = '#366ba0';
 // var fillCol = '#366ba0';
 
 // var lineCol = '#eb5633';
 // var fillCol = '#192735';
 //red
-var lineCol = '#9a3219';
+// var lineCol = '#9a3219';
 // green
 // var lineCol = '#4cae4c';
-var fillCol = '#0e2031';
+var fillCol = '#2c3e50';
 
 particlesJS("particles-js", {
   "particles": {

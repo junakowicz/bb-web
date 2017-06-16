@@ -146,19 +146,19 @@ $('.countdown').final_countdown({
     end   : upcoming.epoch,
     now : now,
 	seconds: {
-	borderColor: '#15FF00',
+	borderColor: 'rgb(139, 142, 150)',
 	borderWidth: '3'
 	},
 	minutes: {
-		borderColor: '#FFDE00',
+		borderColor: 'rgb(139, 142, 150)',
 		borderWidth: '5'
 	},
 	hours: {
-		borderColor: '#FF9C00',
+		borderColor: 'rgb(139, 142, 150)',
 		borderWidth: '8'
 	},
 	days: {
-		borderColor: '#00E870',
+		borderColor: 'rgb(139, 142, 150)',
 		borderWidth: '13'
 	}}, function() {
 	});
