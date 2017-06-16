@@ -1427,15 +1427,22 @@ Object.deepExtend = function(destination, source) {
 };
 
 window.requestAnimFrame = (function(){
-  return  window.requestAnimationFrame ||
-    window.webkitRequestAnimationFrame ||
-    window.mozRequestAnimationFrame    ||
-    window.oRequestAnimationFrame      ||
-    window.msRequestAnimationFrame     ||
-    function(callback){
-      window.setTimeout(callback, 1000 / 60);
+  return function(callback){
+      window.setTimeout(callback, 1000 / 15);
     };
 })();
+
+// window.requestAnimFrame = (function(){
+//   return  window.requestAnimationFrame ||
+//     window.webkitRequestAnimationFrame ||
+//     window.mozRequestAnimationFrame    ||
+//     window.oRequestAnimationFrame      ||
+//     window.msRequestAnimationFrame     ||
+//     function(callback){
+//       window.setTimeout(callback, 1000 / 60);
+//     };
+// })();
+
 
 window.cancelRequestAnimFrame = ( function() {
   return window.cancelAnimationFrame         ||
