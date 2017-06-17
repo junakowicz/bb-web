@@ -813,3 +813,8 @@ textarea {
 .feat-img {
 	margin-top: -44px;
 }
+
+.exchange-icon{
+    display:inline-block;
+    width: 175px;
+}
