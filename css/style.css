@@ -167,7 +167,7 @@ blockquote {
 /* Backgrounds
 ----------------------------------------------------------------------------- */
 .default-bg {
-	background-color: #005788;
+	background-color:rgba(60, 125, 0, 0.32);
 	color: #ffffff;
 }
 .default-bg.blue {
