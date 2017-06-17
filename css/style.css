@@ -147,7 +147,7 @@ blockquote {
 }
 .banner-caption {
 	position: absolute;
-	top: 28%;
+	top: 22%;
 	width: 100%;
 	z-index: 2;
 }
@@ -799,6 +799,11 @@ textarea {
 }
 .apps img{
 	margin:auto;
+}
+.logo-main{
+	max-width: 135px;
+    margin: auto;
+	font-size: 32px;
 }
 
 .apps div.app{
