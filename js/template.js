@@ -140,26 +140,26 @@ for (var i = 0;i<fullMoons.length -1;i++ ){
 	}
 }
 $( "#distDate" ).html('Fullmoon, ' + upcoming.sDate)
-
+var circleBorderFactor = 0.5
 $('.countdown').final_countdown({
     start : last.epoch, //Here use Milisecond. To convert your time you can go to this(https://currentmillis.com/) website. 
     end   : upcoming.epoch,
     now : now,
 	seconds: {
 	borderColor: 'rgb(139, 142, 150)',
-	borderWidth: '3'
+	borderWidth: 3*circleBorderFactor
 	},
 	minutes: {
 		borderColor: 'rgb(139, 142, 150)',
-		borderWidth: '5'
+		borderWidth: 5*circleBorderFactor
 	},
 	hours: {
 		borderColor: 'rgb(139, 142, 150)',
-		borderWidth: '8'
+		borderWidth: 8*circleBorderFactor
 	},
 	days: {
 		borderColor: 'rgb(139, 142, 150)',
-		borderWidth: '13'
+		borderWidth: 13*circleBorderFactor
 	}}, function() {
 	});
 

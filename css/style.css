@@ -167,7 +167,7 @@ blockquote {
 /* Backgrounds
 ----------------------------------------------------------------------------- */
 .default-bg {
-	background-color:rgba(68, 157, 68, 0.83);
+	background-color:rgba(68, 157, 68, 0.43);
 	color: #ffffff;
 }
 .default-bg.blue {
@@ -725,7 +725,7 @@ textarea {
 
 .clock{
     position: relative;
-    max-width: 542px;
+    max-width: 475px;
     margin: 0 auto;
 }
 .clock-item {
@@ -766,8 +766,8 @@ textarea {
 }
 
 .text .val {
-    font-size: 1.4em;
-    line-height: 0.5em;
+    font-size: 1.1em;
+    line-height: 0.3em;
 }
 
 .text .type-time {
