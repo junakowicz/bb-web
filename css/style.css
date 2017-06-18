@@ -831,15 +831,30 @@ textarea {
 /* small dev fix */
 @media (max-width: 550px) {
     body{font-size: 14px;}
-	h2 {
+	.container h2 {
 		font-size: 15px;
 		margin-bottom: 9px;
 	}
-	.space {
+	.container .space {
 		padding: 2px 0;
 	}
 	.logo-main {
 		max-width: 108px;
 		font-size: 28px;
+		margin-top: -38px;
+		margin-left: auto;
+		margin-right: auto;
+		margin-bottom: -18px;
+	}
+	.logo-main img {
+    	max-width: 83px;
+    	height: auto;
+    	display: inline-block;
+	}
+	.navbar-collapse {
+		background:rgba(0, 0, 0, 0.78);
+	}
+	.text .type-time {
+    	font-size: 10px;
 	}
 }
