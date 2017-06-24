@@ -821,6 +821,11 @@ textarea {
 	margin-top: 50px;
 }
 /*featured images*/
+.margin-zero {
+    margin-left: 0px;
+    margin-right: 0px;
+}
+
 .feat-img {
 	margin-top: -44px;
 }
