@@ -173,6 +173,11 @@ blockquote {
 .default-bg.blue {
 	background-color: #5594de;
 }
+
+.default-bg.green {
+	background-color: rgba(92, 184, 92, 0.75);
+}
+
 .translucent-bg {
 	color: #ffffff;
 }
