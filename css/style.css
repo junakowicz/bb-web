@@ -167,15 +167,16 @@ blockquote {
 /* Backgrounds
 ----------------------------------------------------------------------------- */
 .default-bg {
-	background-color:rgba(75, 149, 205, 0.58);
+	background-color:rgba(75, 149, 205, 0.3);
 	color: #ffffff;
+	padding-bottom: 10px;
 }
 .default-bg.blue {
 	background-color: #5594de;
 }
 
 .default-bg.green {
-	background-color: rgba(92, 184, 92, 0.75);
+	background-color: rgba(92, 184, 92, 0.3);
 }
 
 .translucent-bg {
