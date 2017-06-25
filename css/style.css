@@ -67,7 +67,7 @@ h4 span {
 	color: #55acee;
 }
 a {
-	color: #55acee;
+	color: 	#71c2ff;
 }
 a:hover {
 	color: #339BEB;
@@ -176,7 +176,7 @@ blockquote {
 }
 
 .default-bg.green {
-	background-color: rgba(0, 255, 0, 0.3)
+	background-color: rgba(0, 255, 0, 0.23)
 }
 
 .translucent-bg {
