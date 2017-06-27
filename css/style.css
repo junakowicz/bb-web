@@ -838,6 +838,9 @@ textarea {
 	margin-top: -44px;
 }
 
+.max-w320 {
+    max-width: 320px;
+}
 .exchange-icon{
     display:inline-block;
     width: 175px;
