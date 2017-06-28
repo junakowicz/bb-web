@@ -108,60 +108,82 @@
 				$(".modal").prependTo( "body" );
 			});
 		}
+//ANiMATED FRAME BORDER
+		$(".frame-it").rollingBorder({
 
+		padding: 0,
 
-// COUNTDOWN
-var now = new Date().getTime()/1000
+		color: "rgba(113, 194, 255, 0.48)",
 
-var upcoming = null; 
-var last= null;
+		width: 1,
 
-var fullMoons = [
-	{epoch: 1497013800, sDate: 'June 9 13:10 UTC'},
-	{epoch: 1499573220, sDate: 'July 9 04:07 UTC'},
-	{epoch: 1502129400, sDate: 'August 7 18:10 UTC'},
-	{epoch: 1504681320, sDate: 'September 6 07:02 UTC'},
-	{epoch: 1507228800, sDate: 'October 5 18:40 UTC'},
-	{epoch: 1509772980, sDate: 'November 4 05:23 UTC'},
-	{epoch: 1512316020, sDate: 'December 3 15:47 UTC'},
-	{epoch: 9999999999, sDate: 'LAST we already conquered the world'},
-]
+		length: "100%"
 
-for (var i = 0;i<fullMoons.length -1;i++ ){
-	if(now > fullMoons[i].epoch && now< fullMoons[i+1].epoch){
-		last = fullMoons[i]
-		upcoming = fullMoons[i+1]
-		break;
+		});
+		$(".frame-it1").rollingBorder({
 
-	} else {
-		last = fullMoons[fullMoons.length-1]
-		upcoming = fullMoons[fullMoons.length-1]
+		padding: 0,
 
-	}
-}
-$( "#distDate" ).html('Fullmoon, ' + upcoming.sDate)
-var circleBorderFactor = 0.5
-$('.countdown').final_countdown({
-    start : last.epoch, //Here use Milisecond. To convert your time you can go to this(https://currentmillis.com/) website. 
-    end   : upcoming.epoch,
-    now : now,
-	seconds: {
-	borderColor: 'rgb(139, 142, 150)',
-	borderWidth: 3*circleBorderFactor
-	},
-	minutes: {
-		borderColor: 'rgb(139, 142, 150)',
-		borderWidth: 5*circleBorderFactor
-	},
-	hours: {
-		borderColor: 'rgb(139, 142, 150)',
-		borderWidth: 8*circleBorderFactor
-	},
-	days: {
-		borderColor: 'rgb(139, 142, 150)',
-		borderWidth: 13*circleBorderFactor
-	}}, function() {
-	});
+		color: "rgba(113, 194, 255, 0.48)",
+
+		width: 1,
+
+		length: "100%"
+
+		});
+
+		// COUNTDOWN
+		var now = new Date().getTime()/1000
+
+		var upcoming = null; 
+		var last= null;
+
+		var fullMoons = [
+			{epoch: 1497013800, sDate: 'June 9 13:10 UTC'},
+			{epoch: 1499573220, sDate: 'July 9 04:07 UTC'},
+			{epoch: 1502129400, sDate: 'August 7 18:10 UTC'},
+			{epoch: 1504681320, sDate: 'September 6 07:02 UTC'},
+			{epoch: 1507228800, sDate: 'October 5 18:40 UTC'},
+			{epoch: 1509772980, sDate: 'November 4 05:23 UTC'},
+			{epoch: 1512316020, sDate: 'December 3 15:47 UTC'},
+			{epoch: 9999999999, sDate: 'LAST we already conquered the world'},
+		]
+
+		for (var i = 0;i<fullMoons.length -1;i++ ){
+			if(now > fullMoons[i].epoch && now< fullMoons[i+1].epoch){
+				last = fullMoons[i]
+				upcoming = fullMoons[i+1]
+				break;
+
+			} else {
+				last = fullMoons[fullMoons.length-1]
+				upcoming = fullMoons[fullMoons.length-1]
+
+			}
+		}
+		$( "#distDate" ).html('Fullmoon, ' + upcoming.sDate)
+		var circleBorderFactor = 0.5
+		$('.countdown').final_countdown({
+			start : last.epoch, //Here use Milisecond. To convert your time you can go to this(https://currentmillis.com/) website. 
+			end   : upcoming.epoch,
+			now : now,
+			seconds: {
+			borderColor: 'rgb(139, 142, 150)',
+			borderWidth: 3*circleBorderFactor
+			},
+			minutes: {
+				borderColor: 'rgb(139, 142, 150)',
+				borderWidth: 5*circleBorderFactor
+			},
+			hours: {
+				borderColor: 'rgb(139, 142, 150)',
+				borderWidth: 8*circleBorderFactor
+			},
+			days: {
+				borderColor: 'rgb(139, 142, 150)',
+				borderWidth: 13*circleBorderFactor
+			}}, function() {
+			});
 
 	}); // End document ready
 })(this.jQuery);

@@ -846,9 +846,29 @@ textarea {
     width: 175px;
 }
 .img-wallet-left{
-    display:inline-block;
+    /* display:inline-block; */
+	    margin-right: 0px;
 }
 
+
+.frame-it {
+    float: left;
+    position: absolute;
+    width: 263px;
+    height: 100px;
+    left: 44px;
+    top: 187px;
+    /* background-color: green; */
+}
+.frame-it1 {
+    float: left;
+    position: absolute;
+    left: 27px;
+    top: 193px;
+    width: 265px;
+    height: 85px;
+    /* background-color: green; */
+}
 
 /* small dev fix */
 @media (max-width: 550px) {
