@@ -109,28 +109,28 @@
 			});
 		}
 //ANiMATED FRAME BORDER
-		$(".frame-it").rollingBorder({
+		// $(".frame-it").rollingBorder({
 
-		padding: 0,
+		// padding: 0,
 
-		color: "rgba(113, 194, 255, 0.48)",
+		// color: "rgba(113, 194, 255, 0.48)",
 
-		width: 1,
+		// width: 1,
 
-		length: "100%"
+		// length: "100%"
 
-		});
-		$(".frame-it1").rollingBorder({
+		// });
+		// $(".frame-it1").rollingBorder({
 
-		padding: 0,
+		// padding: 0,
 
-		color: "rgba(113, 194, 255, 0.48)",
+		// color: "rgba(113, 194, 255, 0.48)",
 
-		width: 1,
+		// width: 1,
 
-		length: "100%"
+		// length: "100%"
 
-		});
+		// });
 
 		// COUNTDOWN
 		var now = new Date().getTime()/1000

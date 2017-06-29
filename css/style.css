@@ -846,8 +846,8 @@ textarea {
     width: 175px;
 }
 .img-wallet-left{
-    /* display:inline-block; */
-	    margin-right: 0px;
+     display:inline-block; 
+	    /* margin-right: 0px; */
 }
 
 
