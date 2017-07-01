@@ -184,7 +184,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', end
 }
 
 .default-bg.green {
-	background-color: rgba(68, 157, 68, 0.55);
+	background-color: rgba(68, 157, 68, 0.5);
 }
 
 .translucent-bg {
@@ -847,11 +847,11 @@ textarea {
 }
 .img-wallet-left{
      display:inline-block; 
-	    /* margin-right: 0px; */
+	 margin-right: 58px;
 }
 
 .img-feature{
-    max-width: 360px;
+    /* max-width: 360px; */
 	-webkit-box-shadow: 0px 0px 19px -1px rgba(0,0,0,0.75);
 	-moz-box-shadow: 0px 0px 19px -1px rgba(0,0,0,0.75);
 	box-shadow: 0px 0px 19px -1px rgba(0,0,0,0.75);
