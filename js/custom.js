@@ -1,5 +1,5 @@
 // blue
-var lineCol = '#366ba0';
+var lineCol = '#274e75';
 // var fillCol = '#366ba0';
 
 // var lineCol = '#eb5633';
@@ -66,7 +66,7 @@ particlesJS("particles-js", {
     },
     "move": {
       "enable": true,
-      "speed": 3,
+      "speed": 1,
       "direction": "top-right",
       "random": true,
       "straight": false,
