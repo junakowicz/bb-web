@@ -1428,7 +1428,7 @@ Object.deepExtend = function(destination, source) {
 
 window.requestAnimFrame = (function(){
   return function(callback){
-      window.setTimeout(callback, 1000 / 15);
+      window.setTimeout(callback, 1000 / 22);
     };
 })();
 
